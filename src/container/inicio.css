@@ -1,0 +1,19 @@
+section{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px 0;
+}
+
+.description{
+    max-width: 50%;
+}
+.description h5{
+    margin-top: 25px;
+}
+
+@media(max-width:615px) {
+    section{
+        display: block;
+        text-align: -webkit-center;
+    }
+}
