@@ -1,40 +1,63 @@
-/*Header*/
-.redes-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  .redes-container ul li {
-    display: inline-block;
-    margin: 0 5px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-  }
-  
-  .redes-container ul li a {
-    display: block;
-    padding: 0 10px;
-    background-color: #f3eaec;
-    color: #333;
-    line-height: 39px;
-    font-size: 19px;
-    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
-    transition: 0.2s;
-    border-radius: 50%;
-  }
-  
+:root {
+  --linkedin: #0e76a8;
+  --whatsapp: #4ac959;
+}
 
-  /*FOOTER*/
-footer{
-  background-color: rgba(15, 15, 15, 0.911);
+/*Header*/
+.header-color{
+  background-color: #66C2C7;
+  font-weight: 600;
+}
+
+.redes-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.redes-container ul li {
+  display: inline-block;
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.redes-container ul li a {
+  display: block;
+  padding: 0 10px;
+  background-color: #f3eaec;
+  color: #333;
+  line-height: 39px;
+  font-size: 19px;
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+  border-radius: 50%;
+}
+
+.redes-container ul li a:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  filter: none;
+}
+
+.redes-container ul li .wsp:hover {
+  background-color: var(--whatsapp);
+}
+
+.redes-container ul li .linkedin:hover {
+  background-color: var(--linkedin);
+}
+
+/*FOOTER*/
+footer {
+  background-color: #66C2C7;
   height: 200px;
-  color: #f3eaec;
+  color: #fff;
   display: flex;
   justify-content: space-around;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.5rem;
   margin-top: 50px;
 }

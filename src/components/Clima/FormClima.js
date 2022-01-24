@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Alert from "react-bootstrap/Alert";
+import { consultarApi } from '../../servicios/ClimaApi';
 
 const Clima = (props) => {
     const [busqueda, setBusqueda] = useState({
         ciudad: "",
         pais: ""
     });
-    const [error, setError] = useState(false)
+    const [error, setError] = useState(false);
+    const paises = [{ value: "", name: "Seleccione un País" }, { value: "AR", name: "Argentina" }, { value: "BR", name: "Brasil" }, { value: "UR", name: "Uruguay" }];
 
     const handleChange = (e) => {
         setBusqueda({
@@ -17,7 +19,7 @@ const Clima = (props) => {
         })
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
         if (busqueda.ciudad.trim() === "" || busqueda.pais.trim() === "") {
@@ -25,16 +27,8 @@ const Clima = (props) => {
             return;
         }
         setError(false);
-        consultarApi();
-    };
+        const result = await consultarApi(busqueda.pais, busqueda.ciudad);
 
-    const consultarApi = async () => {
-        const apiKey = "bfdea21443991dbbb4fb30286ff536f8",
-            url = `https://api.openweathermap.org/data/2.5/weather?q=${busqueda.ciudad},${busqueda.pais}&appid=${apiKey}`;
-
-        const respuesta = await fetch(url),
-            result = await respuesta.json();
-        console.log(result);
         if (result.cod === "404") {
             setError(true);
             props.setResultado({});
@@ -42,8 +36,7 @@ const Clima = (props) => {
             setError(false);
             props.setResultado(result);
         }
-
-    }
+    };
 
 
     return (
@@ -62,10 +55,10 @@ const Clima = (props) => {
                     <Form.Group className="mb-3">
                         <Form.Label>País</Form.Label>
                         <Form.Select onChange={handleChange} name="pais" value={busqueda.pais}>
-                            <option value="">Seleccione un país</option>
-                            <option value="AR">Argentina</option>
-                            <option value="BR">Brasil</option>
-                            <option value="UR">Uruguay</option>
+                            {paises.map((pais, index) => {
+                                const { value, name } = pais;
+                                return <option key={index} value={value}>{name}</option>
+                            })}
                         </Form.Select>
                     </Form.Group>
                     <Button variant="primary" type="submit"

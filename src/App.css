@@ -5,9 +5,13 @@
   display: none;
 }
 
+body{
+  background-color: black;
+}
+
 .apps-container{
-  display: flex;
-  justify-content: space-evenly;
+  display: block;
+  list-style: border;
 }
 
 @media(max-width:615px) {

@@ -1,0 +1,16 @@
+.porcentaje {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background-color: #081921;
+  display: block;
+  margin-top: 5px;
+}
+
+.porcentaje div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #03a9f4;
+  }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import ListTarea from "./ListTarea";
-import "./components.css";
+import "./form.css";
 
 const FormTarea = () => {
     const [tareas, setTareas] = useState([]);

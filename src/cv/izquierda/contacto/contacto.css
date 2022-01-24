@@ -1,0 +1,23 @@
+.contacto-info {
+  padding-top: 35px;
+}
+.titulo {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.ul-contacto {
+  position: relative;
+}
+li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.icon {
+  color: #03a9f4;
+  margin-right: 7px;
+}
