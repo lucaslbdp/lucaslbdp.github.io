@@ -9,7 +9,6 @@ const CardClima = ({resultado}) => {
 
     return (
         <div>
-            <h2>Consultar clima</h2>
             <h3>{resultado.name}</h3>
             <p>{temp}</p>
         </div>

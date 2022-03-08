@@ -1,6 +1,24 @@
 .hidden {
   display: none;
 }
+
 .show {
   display: block;
+}
+
+.imagen-tarea {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.container-tareas {
+  text-align: -webkit-center;
+  padding: 25px;
+}
+
+.boton-modal {
+  width: 50%;
+  align-self: center;
+  margin-bottom: 15px;
 }

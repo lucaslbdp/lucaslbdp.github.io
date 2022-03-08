@@ -1,14 +1,27 @@
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
-.show{
-    display: block;
+.show {
+  display: block;
+}
+.container-clima {
+  text-align: -webkit-center;
+  padding: 25px;
 }
 
-.clima-icon{
-    font-size: 4rem;
-
+.imagen-clima {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
 }
-.clima-icon:hover{
-    filter: blur(2px);
+
+.modal-clima {
+  align-self: center;
+  margin-top: 20px;
+}
+
+.boton-modal {
+  width: 50%;
+  align-self: center;
+  margin-bottom: 10px;
 }

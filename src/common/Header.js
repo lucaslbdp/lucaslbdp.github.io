@@ -7,14 +7,14 @@ import "./common.css";
 const Header = () => {
     return (
         <React.Fragment>
-            <Navbar collapseOnSelect expand="md" className='header-color' variant="dark">
+            <Navbar collapseOnSelect expand="md" className='header-color' variant="dark" sticky="top">
                 <Container>
-                    <Navbar.Brand href="#home">Lucas Barrionuevo</Navbar.Brand>
+                    <Navbar.Brand href="/">Lucas Barrionuevo</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mx-auto">
                             <Nav.Link href="/cv">CV</Nav.Link>
-                            <Nav.Link href="#pricing">Contacto</Nav.Link>
+                            <Nav.Link href="/repositorio">Repositorio</Nav.Link>
                         </Nav>
                         <Nav className='redes-container'>
                             <ul>

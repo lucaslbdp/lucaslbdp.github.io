@@ -4,8 +4,8 @@
 }
 
 /*Header*/
-.header-color{
-  background-color: #66C2C7;
+.header-color {
+  background-color: #66c2c7;
   font-weight: 600;
 }
 
@@ -44,15 +44,17 @@
 
 .redes-container ul li .wsp:hover {
   background-color: var(--whatsapp);
+  color: #fff;
 }
 
 .redes-container ul li .linkedin:hover {
   background-color: var(--linkedin);
+  color: #fff;
 }
 
 /*FOOTER*/
 footer {
-  background-color: #66C2C7;
+  background-color: #66c2c7;
   height: 200px;
   color: #fff;
   display: flex;
@@ -60,4 +62,18 @@ footer {
   font-weight: 600;
   font-size: 1.5rem;
   margin-top: 50px;
+}
+
+.redes-footer {
+  display: grid;
+  margin-top: 25px;
+  justify-items: center;
+}
+.redes-footer a{
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.redes-footer a:hover{
+  color: #fff;
 }

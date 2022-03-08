@@ -40,20 +40,12 @@ const Clima = (props) => {
 
 
     return (
-        <div className='container'>
             <>
                 <Form onSubmit={handleSubmit}>
                     {error ? <Alert variant="danger">
                         Todos los campos son obligatorios
                     </Alert> : null}
-
                     <Form.Group className="mb-3">
-                        <Form.Label>Ciudad</Form.Label>
-                        <Form.Control placeholder="Escriba una ciudad" type="text"
-                            onChange={handleChange} name="ciudad" value={busqueda.ciudad} />
-                    </Form.Group>
-                    <Form.Group className="mb-3">
-                        <Form.Label>País</Form.Label>
                         <Form.Select onChange={handleChange} name="pais" value={busqueda.pais}>
                             {paises.map((pais, index) => {
                                 const { value, name } = pais;
@@ -61,11 +53,14 @@ const Clima = (props) => {
                             })}
                         </Form.Select>
                     </Form.Group>
-                    <Button variant="primary" type="submit"
-                    >Buscar</Button>
+                    <Form.Group className="mb-3 d-flex">
+                        <Form.Control placeholder="Escriba una ciudad" type="text"
+                            onChange={handleChange} name="ciudad" value={busqueda.ciudad} />
+                        <Button variant="primary" type="submit" className='mx-auto'
+                        >Buscar</Button>
+                    </Form.Group>
                 </Form>
             </>
-        </div>
     );
 };
 
