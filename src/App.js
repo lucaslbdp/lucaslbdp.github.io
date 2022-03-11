@@ -12,8 +12,8 @@ const App = () => {
       <Header />
 
         <Routes>
-          <Route exact path="/" element={<Inicio />} />
-          <Route exact path="/cv" element={<Cv />} />
+          <Route path="/" element={<Inicio />} />
+          <Route path="/cv" element={<Cv />} />
         </Routes>
 
       <Footer />
