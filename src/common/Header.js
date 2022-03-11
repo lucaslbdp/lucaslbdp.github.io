@@ -14,7 +14,7 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mx-auto">
                             <Nav.Link href="/cv">CV</Nav.Link>
-                            <Nav.Link target="_blank noreferrer" href="https://github.com/lucaslbdp/cvBarrionuevo.github.io">Repositorio</Nav.Link>
+                            <Nav.Link target="_blank noreferrer" href="https://github.com/lucaslbdp/lucaslbdp.github.io.git">Repositorio</Nav.Link>
                         </Nav>
                         <Nav className='redes-container'>
                             <ul>
