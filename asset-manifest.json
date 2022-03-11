@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/lucaslbdp.github.io.git/static/css/main.700ac525.css",
-    "main.js": "/lucaslbdp.github.io.git/static/js/main.23828b5d.js",
-    "static/js/787.cff12441.chunk.js": "/lucaslbdp.github.io.git/static/js/787.cff12441.chunk.js",
-    "static/media/opcion2.jpg": "/lucaslbdp.github.io.git/static/media/opcion2.b4335f13d959a8a8204e.jpg",
-    "static/media/opcion1.jpg": "/lucaslbdp.github.io.git/static/media/opcion1.19ead40864f34ded6c44.jpg",
-    "static/media/clima.jpg": "/lucaslbdp.github.io.git/static/media/clima.63a3bdbd8e4c0b408696.jpg",
-    "static/media/tarea.jpg": "/lucaslbdp.github.io.git/static/media/tarea.177f816a17ade63bfdca.jpg",
-    "index.html": "/lucaslbdp.github.io.git/index.html",
-    "main.700ac525.css.map": "/lucaslbdp.github.io.git/static/css/main.700ac525.css.map",
-    "main.23828b5d.js.map": "/lucaslbdp.github.io.git/static/js/main.23828b5d.js.map",
-    "787.cff12441.chunk.js.map": "/lucaslbdp.github.io.git/static/js/787.cff12441.chunk.js.map"
+    "main.css": "/static/css/main.700ac525.css",
+    "main.js": "/static/js/main.b50929b0.js",
+    "static/js/787.cff12441.chunk.js": "/static/js/787.cff12441.chunk.js",
+    "static/media/opcion2.jpg": "/static/media/opcion2.b4335f13d959a8a8204e.jpg",
+    "static/media/opcion1.jpg": "/static/media/opcion1.19ead40864f34ded6c44.jpg",
+    "static/media/clima.jpg": "/static/media/clima.63a3bdbd8e4c0b408696.jpg",
+    "static/media/tarea.jpg": "/static/media/tarea.177f816a17ade63bfdca.jpg",
+    "index.html": "/index.html",
+    "main.700ac525.css.map": "/static/css/main.700ac525.css.map",
+    "main.b50929b0.js.map": "/static/js/main.b50929b0.js.map",
+    "787.cff12441.chunk.js.map": "/static/js/787.cff12441.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.700ac525.css",
-    "static/js/main.23828b5d.js"
+    "static/js/main.b50929b0.js"
   ]
 }
