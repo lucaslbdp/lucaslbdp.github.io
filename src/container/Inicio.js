@@ -1,9 +1,10 @@
 import React from 'react';
 import AppTareas from '../components/Tareas/Tareas/AppTareas';
 import AppClima from '../components/Clima/AppClima/AppClima';
+import opcion1 from "../img/opcion1.jpg"
 import { CardGroup, Card } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCss3, faHtml5, faJsSquare, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faCss3, faGithub, faHtml5, faJsSquare, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons';
 import "./inicio.css";
 
 const Inicio = () => {
@@ -21,11 +22,12 @@ const Inicio = () => {
                         <FontAwesomeIcon icon={faJsSquare} className='skills' />
                         <FontAwesomeIcon icon={faReact} className='skills' />
                         <FontAwesomeIcon icon={faNodeJs} className='skills' />
+                        <FontAwesomeIcon icon={faGithub} className='skills' />
                     </div>
                 </div>
 
-                <div >
-                    <img src="https://via.placeholder.com/350" alt="placeholder"></img>
+                <div>
+                    <img src={opcion1} alt="placeholder" className='img-inicio'></img>
                 </div>
             </section>
 

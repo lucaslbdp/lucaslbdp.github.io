@@ -46,6 +46,12 @@ section {
   }
 }
 
+.img-inicio{
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+
 @media (max-width: 715px) {
   section {
     display: block;
