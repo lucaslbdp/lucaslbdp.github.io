@@ -61,8 +61,14 @@ section {
     display: block;
     text-align: -webkit-center;
   }
+  .descripcion {
+    max-width: 70%;
+  }
   .skills {
     margin-bottom: 40px;
+  }
+  .container-skills {
+    justify-content: space-around;
   }
   @keyframes tipeo {
     0%,

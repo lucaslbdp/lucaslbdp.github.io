@@ -14,7 +14,7 @@ const Inicio = () => {
             <section>
                 <div className='descripcion'>
                     <span className='loader'><h2>Lucas Barrionuevo</h2></span>
-                    <h5>Un desarrollador frontend junior, buscando aprender más sobre la programación.</h5>
+                    <h5>Un desarrollador frontend junior, buscando generar más experiencia en la programación.</h5>
                     <h5>Vivo en Tucumán, Argentina</h5>
                     <div className='container-skills'>
                         <FontAwesomeIcon icon={faHtml5} className='skills' />

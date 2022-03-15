@@ -10,7 +10,7 @@ const Clima = (props) => {
         pais: ""
     });
     const [error, setError] = useState(false);
-    const paises = [{ value: "", name: "Seleccione un País" }, { value: "AR", name: "Argentina" }, { value: "BR", name: "Brasil" }, { value: "UR", name: "Uruguay" }];
+    const paises = [{ value: "", name: "Seleccione un País" }, { value: "AR", name: "Argentina" }, { value: "BR", name: "Brasil" }, { value: "UR", name: "Uruguay" }, { value: "MX", name: "México" }];
 
     const handleChange = (e) => {
         setBusqueda({
